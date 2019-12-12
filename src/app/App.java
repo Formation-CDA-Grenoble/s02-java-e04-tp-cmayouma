@@ -90,12 +90,22 @@ public class App {
     public boolean isEqual (int v1, int v2){
 
    
-    if(v1==v2){
+        if(v1==v2){
 
-        return true ;}
-    
-    else{
+            return true ;
+        }
+        
+        else{
 
-        return false; } 
+            return false; 
+        } 
     }  
+
+    
+    private static Character createCharacter() {
+        System.out.println("Créons Mario avec 3 vies");    
+        
+        return new Character();
+     } 
+    
 }
