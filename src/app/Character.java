@@ -47,12 +47,18 @@ class Character {
 
     }
     public void takeHit() {
-        if(isBig){
-            isBig = false;
+        if(isInvulnerable){
+
+        }
+        else {
+                if(isBig){
+                     isBig = false;
            
-        }else {
-            lives--;
+                }else {
+                    lives--;
          }
+        }
+       
             
         }
         public boolean getIsInvulnerable() {
