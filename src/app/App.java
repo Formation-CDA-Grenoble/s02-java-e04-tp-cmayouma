@@ -1,5 +1,7 @@
 package app;
 
+import javax.lang.model.util.ElementScanner6;
+
 import app.Character;
 
 public class App {
@@ -84,4 +86,16 @@ public class App {
         // test("mario.getIsInvulnerable()", mario.getIsInvulnerable(), false);
         // test("mario.getLives()", mario.getLives(), 2);
     }
+
+    public boolean isEqual (int v1, int v2){
+
+   
+    if(v1==v2){
+
+        return true ;}
+    
+    else{
+
+        return false; } 
+    }  
 }
