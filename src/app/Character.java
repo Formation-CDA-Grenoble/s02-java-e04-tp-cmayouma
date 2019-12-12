@@ -7,6 +7,7 @@ class Character {
     
     int lives;
       boolean isBig;
+      boolean isInvulnerable;
      
     Character (){
   
@@ -54,7 +55,15 @@ class Character {
          }
             
         }
+        public boolean getIsInvulnerable() {
+            return isInvulnerable;
+        }
+    public void pickUpStar() {
+        isInvulnerable = true;   
         
-    
+    }
+    public void invulnerableWearsOff() {
+        isInvulnerable = false;
+    }
 }
 
