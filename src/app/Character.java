@@ -1,11 +1,13 @@
 package app;
 
 import javax.lang.model.util.ElementScanner6;
+import javax.sound.sampled.LineListener;
 
 class Character {
     
     int lives;
-
+      boolean isBig;
+     
     Character (){
   
     }
@@ -14,16 +16,16 @@ class Character {
         lives = number;
     }
 
-    private int getLives() {
+    public int getLives() {
         return lives;
     }
-    private  void addLife() {
+    public  void addLife() {
         lives++;      
     }
-    private  void loseLife () {
+    public  void loseLife () {
         lives--;        
     }
-    private  boolean haslive () {
+    public  boolean hasLives () {
         boolean result;
         if(lives>0){
             result = true;
@@ -34,7 +36,25 @@ class Character {
         
     }
 
+       
+   
+    public boolean getIsBig() {
+       return isBig;
+    } 
+    public void  pickUpMushroom () {
+       isBig = true;
 
-
+    }
+    public void takeHit() {
+        if(isBig){
+            isBig = false;
+           
+        }else {
+            lives--;
+         }
+            
+        }
+        
+    
 }
 
